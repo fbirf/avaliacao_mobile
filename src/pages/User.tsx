@@ -79,7 +79,6 @@ export default function UserPage() {
 
         if (idUser > 0) {
             userService.update(idUser, name, username, password, selectRoles).then(data => {
-                Alert.alert(selectRoles.length + "")
                 if (data.id) {
                     navigation.navigate('Home');
                 } else {
